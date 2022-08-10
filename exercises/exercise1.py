@@ -9,8 +9,7 @@ Restricción: Usar el operador de multiplicación
 lado_cuadrado = 5
 
 # COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+ area_cuadrado = lado_cuadrado * lado_cuadrado1
 
 assert area_cuadrado == 25
 
