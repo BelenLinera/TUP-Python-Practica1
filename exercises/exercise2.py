@@ -11,6 +11,7 @@ riego_activado = True
 
 # COMPLETAR - INICIO
 piso_mojado = esta_lloviendo or riego_activado
+print(piso_mojado)
 # COMPLETAR - FIN
 
 assert piso_mojado
