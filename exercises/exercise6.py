@@ -1,6 +1,19 @@
 
-print(len(lista_01))
+"""Listas"""
+
+"""
+Inicializar una lista vacía y luego agregarle 4 elementos cualquiera
+Restricción: Utilizar el método append
+"""
+
+# COMPLETAR - INICIO
+lista_01 = []
+lista_01.append(1)
+lista_01.append(1)
+lista_01.append(1)
+lista_01.append(1)
 # COMPLETAR - FIN
+
 assert len(lista_01) == 4
 
 
@@ -73,7 +86,9 @@ lista = ["ho", 3.1416, 42, 81, 6, "la"]
 # COMPLETAR - INICIO
 
 print("ejercicio5")
-lista_primero_y_ultimo = lista[0:5]
+lista_primero_y_ultimo = []
+lista_primero_y_ultimo.append(lista[0])
+lista_primero_y_ultimo.append(lista[-1])
 print(lista_primero_y_ultimo)
 # COMPLETAR - FIN
 
@@ -89,8 +104,10 @@ lista = ["ho", 3.1416, "la", 81, 6, 42]
 
 # COMPLETAR - INICIO
 print("ejercicio6")
-lista_primeros = lista[3:]
-print(lista_primeros)
+lista_primeros = []
+lista_primeros.append(lista[0])
+lista_primeros.append(lista[1])
+lista_primeros.append(lista[2])
 # COMPLETAR - FIN
 
 assert lista_primeros == ["ho", 3.1416, "la"]
@@ -102,5 +119,127 @@ Restricción: Utilizar indexado múltiple
 """
 
 lista = ["ho", 3.1416, "la", 81, 6, 42]
+print("Ejercicio7: ")
+lista_primeros = lista[0:3]
+print(lista_primeros)
+assert lista_primeros == ["ho", 3.1416, "la"]
+# COMPLETAR - INICIO
+
+"""
+Armar una lista que contenga los primeros 2 y los últimos 2 elementos de la
+siguiente lista
+Restricción: Utilizar el método extend junto al indexado múltiple
+"""
+
+lista = ["ho", "la", 81, 6, 42, "como", "estas?"]
 
 # COMPLETAR - INICIO
+lista_a = lista[0:2]
+lista_a.extend(lista[5:])
+lista_primeros_y_ultimos = lista_a
+print("Ejercicio8: ")
+print(lista_primeros_y_ultimos)
+# COMPLETAR - FIN
+
+assert lista_primeros_y_ultimos == ["ho", "la", "como", "estas?"]
+
+
+"""
+Concatenar las siguientes 2 listas
+Restricción: Utiliar el operador +
+"""
+
+lista_01 = [0, 1, 2, 3]
+lista_02 = [5, 6]
+
+# COMPLETAR - INICIO
+lista_concatenada = lista_01 + lista_02
+print("Ejercicio9: ")
+print(lista_concatenada)
+# COMPLETAR - FIN
+
+assert lista_concatenada == [0, 1, 2, 3, 5, 6]
+
+
+"""
+Concatenar 3 veces la siguiente lista consigo misma
+Restricción: Utiliar el operador *
+"""
+
+lista_01 = [0, 1, 0, 1, 0, 1]
+
+# COMPLETAR - INICIO
+lista_duplicada = lista_01 *3
+print("Ejercicio10: ")
+print(lista_duplicada)
+# COMPLETAR - FIN
+
+assert lista_duplicada == [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+
+
+"""
+Verificar si el siguiente elemento pertenece a la lista
+Restricción: Utiliar el operador in
+"""
+
+elemento = 1.0
+lista = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1.0, 1, 0, 1, 0, 1]
+
+# COMPLETAR - INICIO
+variable_booleana = elemento in lista
+print("Ejercicio11: ")
+print(variable_booleana)
+# COMPLETAR - FIN
+
+assert variable_booleana
+
+
+"""
+Verificar si las siguientes listas son iguales
+Restricción: Utilizar el operador ==
+"""
+
+lista_01 = [1, 2, 3, 4.5, 6, 7]
+lista_02 = [1, 3, 2, 4, 5, 6, 7]
+
+# COMPLETAR - INICIO
+son_iguales = lista_01 == lista_02
+print("Ejercicio12: ")
+print(son_iguales)
+# COMPLETAR - FIN
+
+assert not son_iguales
+
+
+"""
+Se cuenta con una lista de elementos booleanos que corresponden a las notas de los exámenes
+cuatrimestrales de un alumno (True si está aprobado y False en caso contrario)
+Determinar si el alumno no tiene examenes aprobados.
+Restricción: Utilizar el método any
+"""
+
+notas = [False, False, False, False, False, False, False, False, False]
+
+# COMPLETAR - INICIO
+no_tiene_examenes_aprobados = not any(notas)
+print("Ejercicio13: ")
+print(no_tiene_examenes_aprobados)
+# COMPLETAR - FIN
+
+assert no_tiene_examenes_aprobados
+
+
+"""
+Se cuenta con una lista de elementos booleanos que corresponden a las notas de los exámenes
+cuatrimestrales de un alumno (True si está aprobado y False en caso contrario)
+Determinar si el alumno ha aprobado todos sus exámenes.
+Restricción: Utilizar el método all
+"""
+
+notas = [True, True, False, True, True, True, True, True, True, True, True, True]
+
+# COMPLETAR - INICIO
+print("Ejercicio14: ")
+tiene_todo_aprobado = all(notas)
+
+# COMPLETAR - FIN
