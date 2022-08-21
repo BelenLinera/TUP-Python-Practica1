@@ -5,14 +5,11 @@
 Calcular el área del cuadrado usando las variables disponibles.
 Restricción: Usar el operador de multiplicación
 """
-
 lado_cuadrado = 5
 
-#
-<<<<<<< HEAD
- area_cuadrado = lado_cuadrado * lado_cuadrado1
-=======
-area_cuadrado= lado_cuadrado * lado_cuadrado
+#Completar- Inicio
+
+area_cuadrado = lado_cuadrado * lado_cuadrado
 # COMPLETAR - FIN
 assert area_cuadrado == 25
 
@@ -24,6 +21,9 @@ Re-Escribir usando el operador de potencia.
 lado_cuadrado = 5
 
 # COMPLETAR - INICIO
+area_cuadrado = lado_cuadrado ** 2
+
+print(area_cuadrado)
 
 # COMPLETAR - FIN
 
@@ -37,6 +37,9 @@ Re-Escribir usando la función pow.
 lado_cuadrado = 5
 
 # COMPLETAR - INICIO
+area_cuadrado = pow(lado_cuadrado, 2)
+
+print(area_cuadrado)
 
 # COMPLETAR - FIN
 
@@ -53,6 +56,11 @@ presupuesto_disponible = 10
 
 # COMPLETAR - INICIO
 
+cantidad_a_comprar = int( presupuesto_disponible // precio)
+print(cantidad_a_comprar)
+
+cantidad_a_comprar = presupuesto_disponible // precio
+
 # COMPLETAR - FIN
 
 assert cantidad_a_comprar == 2
@@ -67,6 +75,11 @@ numero_incalculable = 2 ** 54 - 1
 
 # COMPLETAR - INICIO
 
+if numero_incalculable  % 7 == 0 :
+    print("es_divisible_por_siete")
+else :
+    print("no es divisible por 7 ")
+
+es_divisible_por_siete = (numero_incalculable % 7)
 # COMPLETAR - FIN
 
-assert es_divisible_por_siete
