@@ -7,11 +7,13 @@ Restricción: Utilizar el método append
 """
 
 # COMPLETAR - INICIO
+print("Ejercicio1")
 lista_01 = []
 lista_01.append(1)
 lista_01.append(1)
 lista_01.append(1)
 lista_01.append(1)
+print(len(lista_01))
 # COMPLETAR - FIN
 
 assert len(lista_01) == 4
@@ -108,6 +110,7 @@ lista_primeros = []
 lista_primeros.append(lista[0])
 lista_primeros.append(lista[1])
 lista_primeros.append(lista[2])
+print(lista_primeros)
 # COMPLETAR - FIN
 
 assert lista_primeros == ["ho", 3.1416, "la"]
@@ -119,11 +122,13 @@ Restricción: Utilizar indexado múltiple
 """
 
 lista = ["ho", 3.1416, "la", 81, 6, 42]
+# COMPLETAR - INICIO
 print("Ejercicio7: ")
 lista_primeros = lista[0:3]
 print(lista_primeros)
+# COMPLETAR - FIN
 assert lista_primeros == ["ho", 3.1416, "la"]
-# COMPLETAR - INICIO
+
 
 """
 Armar una lista que contenga los primeros 2 y los últimos 2 elementos de la
@@ -241,5 +246,9 @@ notas = [True, True, False, True, True, True, True, True, True, True, True, True
 # COMPLETAR - INICIO
 print("Ejercicio14: ")
 tiene_todo_aprobado = all(notas)
+print(tiene_todo_aprobado)
+
 
 # COMPLETAR - FIN
+
+assert not tiene_todo_aprobado
