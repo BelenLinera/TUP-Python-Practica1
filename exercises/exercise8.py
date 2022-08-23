@@ -81,12 +81,11 @@ diccionario_2 = {
 }
 
 # COMPLETAR - INICIO
-#esta mal
-#def "clave5"
-#clave5=diccionario_2.get("clave5")
+clave5=diccionario_2.get("clave5",5)
+
 # COMPLETAR - FIN
 
-#assert clave5 == 5
+assert clave5 == 5
 
 
 """
@@ -101,7 +100,7 @@ diccionario_3 = {
 }
 
 # COMPLETAR - INICIO
-keys = dict.keys(diccionario_3)
+keys=list(diccionario_3.keys())
 # COMPLETAR - FIN
 
 assert keys == ["clave1", "clave2", "clave3", "clave4"]
@@ -119,7 +118,7 @@ diccionario_4 = {
 }
 
 # COMPLETAR - INICIO
-values = dict.values(diccionario_4)
+values=list(diccionario_4.values())
 # COMPLETAR - FIN
 
 assert values == [1234, 4567, 8910, 1112]
@@ -138,7 +137,7 @@ diccionario_5 = {
 }
 
 # COMPLETAR - INICIO
-items = dict.items(diccionario_5)
+items=list(diccionario_5.items())
 # COMPLETAR - FIN
 
 assert items == [(1, 1111), (2, 2222), (3, 3333), (4, 4444)]
