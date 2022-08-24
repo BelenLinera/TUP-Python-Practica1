@@ -27,7 +27,7 @@ lado_cuadrado = 5
 area_cuadrado = pow(lado_cuadrado, 2)
 
 # COMPLETAR - INICIO
-area_mayor_a_cinco = area_cuadrado >= 5 
+area_mayor_a_cinco = not area_cuadrado < lado_cuadrado 
 # COMPLETAR - FIN
 
 assert area_mayor_a_cinco
