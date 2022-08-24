@@ -51,7 +51,7 @@ assert resultado
 """
 Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
 el mismo valor de la variable 3.
-Restricción: sólo usar OR, NOT y el mecanismo de cortocircuito.
+Restricción: sólo usar AND, OR, NOT y el mecanismo de cortocircuito.
 """
 
 variable_01 = False
@@ -61,7 +61,7 @@ variable_04 = "90"
 variable_05 = 100
 
 # COMPLETAR - INICIO
-resultado = not variable_01 or variable_02 not variable_03 
+resultado = variable_03  or variable_02 and variable_01 and variable_04 and variable_05
 print(resultado)
 # COMPLETAR - FIN
 
