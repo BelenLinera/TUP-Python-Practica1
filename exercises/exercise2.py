@@ -42,7 +42,7 @@ numero_1 = 49
 numero_2 = 50
 
 # COMPLETAR - INICIO
-resultado = (numero_1 % 7) or (numero_2 % 7)
+resultado = not numero_1 % 7 and numero_2 % 7
 # COMPLETAR - FIN
 
 assert resultado
